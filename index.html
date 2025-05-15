@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/04mediaicon.ico" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Trang chủ</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('sticky');
+                else header.classList.remove('sticky');
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const headerMobile = document.querySelector('.headerMobile'); // hoặc '#headerMobile' nếu là ID
+
+            if (headerMobile) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        headerMobile.classList.add('sticky');
+                    } else {
+                        headerMobile.classList.remove('sticky');
+                    }
+                });
+            } else {
+                console.warn('Không tìm thấy phần tử headerMobile');
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Header desktop -->
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <a href="/">
+                    <img src="assets/04media.svg" alt="Logo">
+                </a>
+                <div class="boxRight">
+                    <ul>
+                        <li><a href="/" class="active">TRANG CHỦ</a></li>
+                        <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                        <li class="service">
+                            <a href="#">DỊCH VỤ</a>
+                            <ul class="subMenu">
+                                <li><a href="/chay-quang-cao-facebook">Chạy quảng cáo Facebook</a></li>
+                                <li><a href="/ho-tro-facebook.html">Hỗ trợ Facebook</a></li>
+                                <li><a href="/thiet-ke-landing-page.html">Thiết kế Landing page</a></li>
+                                <li><a href="/thiet-ke-website.html">Thiết kế Website</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/tin-tuc.html">TIN TỨC</a></li>
+                        <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+                    </ul>
+                    <span class="" data-bs-toggle="modal" data-bs-target="#exampleModal">ĐĂNG KÝ TƯ VẤN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <form action="https://formspree.io/f/xyzwdeya" method="POST" class="contactForm">
+                    <h1>NHẬN TƯ VẤN TẠI ĐÂY</h1>
+                    <input type="text" name="fullName" placeholder="Họ tên" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="text" name="phone" placeholder="Số điện thoại" />
+
+                    <select name="service">
+                        <option value="choose" selected>Chọn dịch vụ</option>
+                        <option value="ads">Quảng cáo Facebook</option>
+                        <option value="dvfb">Hỗ trợ Facebook</option>
+                        <option value="website">Thiết kế website</option>
+                        <option value="landing">Thiết kế landing page</option>
+
+                    </select>
+
+                    <textarea name="message" placeholder="Nội dung tin nhắn"></textarea>
+
+                    <div class="btnSend">
+                        <button type="">
+                            <span>gửi ngay</span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- Header mobile -->
+    <header class="headerMobile">
+        <div class="container">
+            <div class="navMenu">
+                <div class="boxMobileLeft">
+                    <a href="/">
+                        <div class="boxMobileLeft">
+                            <img src="./assets/04media-nobg.svg" alt="Logo">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="boxMobileRight">
+                    <input type="checkbox" id="clickCheck" class="menuToggle" hidden>
+                    <label for="clickCheck" class="menuIcon"><i class="fas fa-bars"></i></label>
+
+                    <div class="menuMobile">
+                        <ul class="navList">
+                            <li class="headerMenu mt-3">
+                                <img src="./assets/04media-nobg.svg" alt="Logo">
+                                <label for="clickCheck"><i class="fas fa-times"></i></label>
+                            </li>
+                            <hr>
+                            <li><a href="/">TRANG CHỦ</a></li>
+                            <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                            <li class="service">
+                                <a href="#">DỊCH VỤ</a>
+                                <ul class="subMenu">
+                                    <li><a href="/chay-quang-cao-facebook.html">Chạy quảng cáo Facebook</a></li>
+                                    <li><a href="/ho-tro-facebook.html">Hỗ trợ Facebook</a></li>
+                                    <li><a href="/thiet-ke-landing-page.html">Thiết kế Landing page</a></li>
+                                    <li><a href="/thiet-ke-website.html">Thiết kế Website</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/tin-tuc.html">TIN TỨC</a></li>
+                            <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                    <label for="clickCheck" class="overlay"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="banner-wrapper">
+        <img src="/assets/bannernew.svg" alt="Banner">
+        <div class="container">
+            <div class="content-banner col-6">
+                <h1>04Media</h1>
+                <h2>Marketing</h2>
+                <h2>Agency</h2>
+                <p>Chuyên cung cấp dịch vụ quảng cáo Facebook hiệu quả – tăng tương tác, tiếp cận khách hàng mục tiêu và
+                    tối ưu chi phí cho doanh nghiệp</p>
+                <button class="btns btn-pulse" data-bs-toggle="modal" data-bs-target="#exampleModal">Nhận tư
+                    vấn</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Section 1 -->
+    <div class="bg">
+        <section class="section1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mt-4 animate__animated animate__fadeInLeft wow">
+                        <img src="assets/bgsectionindex.jpg" style="width: 100%;" alt="Banner Home">
+                    </div>
+                    <div class="col-12 col-lg-6 mt-4 animate__animated animate__fadeInRight wow">
+                        <div class="contentSection1">
+                            <h1>Tại sao bạn cần chọn 04Media?</h1>
+                            <p>
+                                04Media là đơn vị chuyên cung cấp dịch vụ chạy quảng cáo Facebook hiệu quả, giúp doanh
+                                nghiệp tiếp cận đúng khách hàng mục tiêu, tăng trưởng doanh số và tối ưu chi phí quảng
+                                cáo. Với kinh nghiệm triển khai hàng trăm chiến dịch cho nhiều lĩnh vực khác nhau,
+                                04Media cam kết mang lại kết quả thực tế, phù hợp với từng mục tiêu kinh doanh.
+                            </p>
+                            <p>
+                                Bên cạnh đó, 04Media còn cung cấp dịch vụ thiết kế website và landing page trọn gói, với
+                                giao diện hiện đại, sáng tạo, chuẩn UX/UI và tối ưu chuyển đổi. Chúng tôi xây dựng giải
+                                pháp phù hợp cho nhiều loại hình như: website bán hàng, giới thiệu doanh nghiệp, tin tức
+                                hay thương mại điện tử — đáp ứng tốt cả về mặt thẩm mỹ lẫn hiệu quả vận hành.
+                            </p>
+                            <p>Với đội ngũ chuyên gia giàu kinh nghiệm trong lĩnh vực digital marketing, 04Media luôn
+                                đồng hành cùng doanh nghiệp trong việc xây dựng thương hiệu, mở rộng thị trường và khai
+                                thác tối đa tiềm năng từ nền tảng Facebook.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Section 2 -->
+    <section class="section2">
+        <div class="container">
+            <h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
+            <div class="row ">
+                <div class="col-lg-3 mt-4 animate__animated animate__zoomIn wow ">
+                    <a href="./chay-quang-cao-facebook.html">
+                        <div class="boxService">
+                            <div class="hoverImage">
+                                <img src="assets/servicefbads.jpg" style="width: 100%;" alt="Chạy quảng cáo Facebook">
+                                <div class="backgroundText">
+                                    <p>CHẠY QUẢNG CÁO FACEBOOK</p>
+                                </div>
+                            </div>
+                            <span>QUẢNG CÁO FACEBOOK</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 mt-4 animate__animated animate__zoomIn wow ">
+                    <a href="./ho-tro-facebook.html">
+                        <div class="boxService">
+                            <div class="hoverImage">
+                                <img src="assets/servicefbunlock.jpg" style="width: 100%;" alt="Hỗ trợ Facebook">
+                                <div class="backgroundText">
+                                    <p>HỖ TRỢ FACEBOOK</p>
+                                </div>
+                            </div>
+                            <span>HỖ TRỢ FACEBOOK</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 mt-4 animate__animated animate__zoomIn wow ">
+                    <a href="/thiet-ke-website.html">
+                        <div class="boxService">
+                            <div class="hoverImage">
+                                <img src="assets/servicewebsite.jpg" style="width: 100%;" alt="Thiết kế Website">
+                                <div class="backgroundText">
+                                    <p>THIẾT KẾ WEBSITE</p>
+                                </div>
+                            </div>
+                            <span>THIẾT KẾ WEBSITE</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 mt-4 animate__animated animate__zoomIn wow ">
+                    <a href="/thiet-ke-landing-page.html">
+                        <div class="boxService">
+                            <div class="hoverImage">
+                                <img src="assets/servicelanding.jpg" style="width: 100%;" alt="Thiết kế Landing Page">
+                                <div class="backgroundText">
+                                    <p>THIẾT KẾ LANDING PAGE</p>
+                                </div>
+                            </div>
+                            <span>THIẾT KẾ LANDING PAGE</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Section 3 -->
+    <section class="section3 animate__animated animate__fadeInUp wow ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-3 col-6">
+                    <div class="showExperience">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <h2>500+</h2>
+                        <p>KHÁCH HÀNG</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="showExperience">
+                        <i class="fa-solid fa-laptop"></i>
+                        <h2>300+</h2>
+                        <p>ĐƯỢC TỐI ƯU</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="showExperience">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h2>100%</h2>
+                        <p>HÀI LÒNG</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="showExperience">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h2>5+</h2>
+                        <p>KINH NGHIỆM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Section 4 (KHÁCH HÀNG NÓI VỀ CHÚNG TÔI) sẽ được thêm vào ở đây -->
+    <section class="section4 ">
+        <div class="container">
+            <h1>KHÁCH HÀNG NÓI VỀ CHÚNG TÔI</h1>
+            <div class="feedback-slider animate__animated animate__slideInUp wow">
+                <div class="feedback">
+                    <div class="box-top">
+                        <img src="assets/customer/1.png" alt="Hồ Tuấn Anh" />
+                        <div class="box-star">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <div class="box-center">
+                        <h2>"Thiết kế website"</h2>
+                        <p>Tôi thực sự hài lòng với cách họ thiết kế website cho tôi – không chỉ đẹp mắt mà còn rất dễ
+                            sử dụng. Đội ngũ luôn lắng nghe ý tưởng của tôi và biến nó thành một sản phẩm hoàn chỉnh.
+                        </p>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="content">
+                            <h6>Hồ Tuấn Anh</h6>
+                            <p>Khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="box-top">
+                        <img src="assets/customer/2.png" alt="Đỗ Quang Chiến" />
+                        <div class="box-star">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <div class="box-center">
+                        <h2>"Thiết kế landing page"</h2>
+                        <p>Landing page được thiết kế rất ấn tượng và thu hút người xem ngay từ cái nhìn đầu tiên. Họ
+                            không chỉ quan tâm đến thẩm mỹ mà còn tối ưu hiệu quả chuyển đổi cho tôi.</p>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="content">
+                            <h6>Đỗ Quang Chiến</h6>
+                            <p>Khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="box-top">
+                        <img src="assets/customer/3.png" alt="Nguyễn Văn Thành" />
+                        <div class="box-star">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <div class="box-center">
+                        <h2>"Chạy quảng cáo Facebook"</h2>
+                        <p>Chiến dịch quảng cáo Facebook của tôi được triển khai rất bài bản. Họ luôn phân tích dữ liệu
+                            và tối ưu liên tục để mang lại hiệu quả cao nhất với ngân sách phù hợp.</p>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="content">
+                            <h6>Nguyễn Văn Thành</h6>
+                            <p>Khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="box-top">
+                        <img src="assets/customer/4.png" alt="Trịnh Ngọc Cường" />
+                        <div class="box-star">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <div class="box-center">
+                        <h2>"Hỗ trợ Facebook"</h2>
+                        <p>Khi fanpage gặp sự cố, họ hỗ trợ tôi rất nhanh chóng và tận tình. Nhờ sự am hiểu và kinh
+                            nghiệm của họ, mọi vấn đề được giải quyết ổn thỏa trong thời gian ngắn.</p>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="content">
+                            <h6>Trịnh Ngọc Cường</h6>
+                            <p>Khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="box-top">
+                        <img src="assets/customer/5.png" alt="Trần Ngọc Thảo Vy" />
+                        <div class="box-star">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <div class="box-center">
+                        <h2>"Thiết kế Website"</h2>
+                        <p>Website của tôi sau khi hoàn thiện không chỉ đẹp mà còn hoạt động mượt mà trên mọi thiết bị.
+                            Tôi rất ấn tượng với khả năng nắm bắt ý tưởng và chuyển hóa nó thành giao diện thực tế của
+                            họ.</p>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="content">
+                            <h6>Trần Ngọc Thảo Vy</h6>
+                            <p>Khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="box-top">
+                        <img src="assets/customer/6.png" alt="Nguyễn Tuấn Anh" />
+                        <div class="box-star">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <div class="box-center">
+                        <h2>"Thiết kế Landing Page"</h2>
+                        <p>Landing page mà họ thiết kế giúp tôi tăng tỷ lệ chuyển đổi đáng kể. Thiết kế rõ ràng, thu
+                            hút, CTA nổi bật và quan trọng là giữ đúng phong cách thương hiệu của tôi.</p>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="content">
+                            <h6>Nguyễn Tuấn Anh</h6>
+                            <p>Khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section5">
+        <div class="container">
+            <h1>TIN TỨC</h1>
+            <div class="row">
+                <div class="news-item col-lg-4 col-12  animate__animated animate__zoomIn  wow">
+                    <div class="boxnews">
+                        <img src="./assets/news1/bgnew1.jpg" alt="news 2" />
+                        <div class="contentNews">
+                            <a href="top-3-tool-copy-chien-dich-quang-cao-facebook-cua-doi-thu-tot-nhat.html"
+                                class="title-news">Top 3 Tool Copy chiến dịch quảng cáo Facebook
+                                của đối thủ tốt
+                                nhất</a>
+                            <p class="des">Bất kỳ ai muốn kinh doanh Online đều ít nhất một lần chạy quảng cáo. Tuy
+                                nhiên có người chạy cùng một loại quảng cáo hơn lại không ra đơn được, trong khi đối
+                                thủ thì ngày nào cũng bán được hàng. Có thể là giá họ tốt hơn hoặc chiến dịch quảng
+                                cáo của họ xác định đúng đối tượng. Vậy làm sao để copy chiến dịch quảng cáo
+                                Facebook của đối thủ tốt nhất. Trong bài này mình sẽ giới thiệu đến các bạn 3 Tool
+                                giúp copy chiến dịch quảng cáo cực kỳ hiệu quả giúp tăng khả năng ra đơn đến 70%.
+                            </p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item col-lg-4 col-12  animate__animated animate__zoomIn  wow">
+                    <div class="boxnews">
+                        <img src="./assets/news2/bgnew2.png" alt="news 2" />
+                        <div class="contentNews">
+                            <a href="./cach-nuoi-acc-facebook-ads-de-chay-quang-cao.html" class="title-news">Cách nuôi
+                                Acc Facebook Ads để chạy quảng
+                                cáo</a>
+                            <p class="des">Cách tạo tài khoản cá nhân, tài khon quảng cáo dễ được trả sau + khả
+                                năng sống cao
+                                Dù không biết là bao giờ fix hoàn toàn nhưng nếu ít 1-
+                            </p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item col-lg-4 col-12  animate__animated animate__zoomIn  wow">
+                    <div class="boxnews">
+                        <img src="./assets/news3/bganh3.png" alt="news 2" />
+                        <div class="contentNews">
+                            <a href="./tim-hieu-dark-web-tu-co-ban-den-nang-cao.html" class="title-news">Tìm hiểu Dark
+                                Web từ cơ bản đến nâng cao</a>
+                            <p class="des">Việc truy cập Dark Web cực kỳ dễ dàng và cũng cực kỳ dễ bị phát hiện nếu
+                                bạn không có
+                                thực hiện các biện pháp phòng bị. Nếu bạn chưa quen với Darknet, bài viết này sẽ
+                                giúp bạn đứng vững trên con đường của mình.</p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="./assets/04media-nobg.svg" alt="VNS Logo" class="img-fluid mb-3">
+                    <p>
+                        VNS cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị
+                        chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng
+                        dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
+                        Tận tâm với khách hàng luôn là trách nhiệm của chúng tôi !
+                    </p>
+                    <p><strong>Địa chỉ:</strong> 42/1 Tân thới nhất 3, Phường Tân Thới Nhất, Quận 12, TP. Hồ Chí Minh
+                    </p>
+                    <p><strong>Số điện thoại:</strong> 032714982</p>
+                    <p><strong>Email:</strong> lck.dev701@gmail.com</p>
+                    <p><strong>Thời gian hoạt động:</strong> 9h00 - 23h59</p>
+                    <p>Copyright &copy; 2025</p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxCenter">
+                        <h3>DỊCH VỤ</h3>
+                        <p>Chạy quảng cáo Facebook</p>
+                        <p>Hỗ trợ Facebook</p>
+                        <p>Thiết kế website</p>
+                        <p>Thiết kế landing page</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxSendInfo">
+                        <h3>CHÍNH SÁCH QUI ĐỊNH</h3>
+                        <p>Điều khoản sử dụng</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Thoả thuận sử dụng dịch vụ</p>
+                        <p>Hỗ trợ khách hàng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="./js/wow.js"></script>
+<script>
+    new WOW().init();
+    $(document).ready(function () {
+        // Slider cho phần feedback
+        $('.feedback-slider').slick({
+            dots: true,           // Hiển thị các chấm điều hướng
+            infinite: true,       // Lặp lại các slide
+            speed: 500,           // Thời gian chuyển slide (500ms)
+            slidesToShow: 2,      // Số lượng slide hiển thị
+            slidesToScroll: 1,    // Mỗi lần cuộn qua 1 slide
+            responsive: [
+                {
+                    breakpoint: 576,  // Khi màn hình nhỏ hơn 576px
+                    settings: {
+                        slidesToShow: 1,  // Hiển thị 1 slide
+                        slidesToScroll: 1 // Cuộn qua 1 slide
+                    }
+                }
+            ]
+        });
+
+    });
+
+
+    document.querySelectorAll('.des').forEach(function (el) {
+        const text = el.textContent.trim();
+        if (text.length > 130) {
+            el.textContent = text.slice(0, 130) + '...';
+        }
+    });
+
+    document.querySelectorAll('.title-news').forEach(function (e) {
+        const titleNews = e.textContent.trim()
+        if (titleNews.length > 50) {
+            e.textContent = titleNews.slice(0, 40) + "..."
+        }
+    })
+
+
+
+    const newsList = [
+        {
+            image: "./assets/news1/bgnew1.jpg", // Thay bgNews1 bằng đường dẫn hình ảnh thực tế
+            title: "Top 3 Tool Copy chiến dịch quảng cáo Facebook của đối thủ tốt nhất",
+            description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content marketing. Tìm hiểu ngay",
+        },
+        {
+            image: "bgNews2.jpg", // Thay bgNews2 bằng đường dẫn hình ảnh thực tế
+            title: "Cách nuôi Acc Facebook Ads để chạy quảng cáo",
+            description: "Cách tạo tài khoản cá nhân, tài khoản quảng cáo dễ được trả sau + khả năng sống cao. là bao giờ fix hoàn toàn nhưng nếu ít 1-2 cái thì chắc vẫn còn cửa, hi vọng mọi người tranh thủ làm thêm vài cái mà dự phòng.",
+        },
+        {
+            image: "bgNews3.jpg", // Thay bgNews3 bằng đường dẫn hình ảnh thực tế
+            title: "Tìm hiểu Dark Web từ cơ bản đến nâng cao",
+            description: "Việc truy cập Dark Web cực kỳ dễ dàng và cũng cực kỳ dễ bị phát hiện nếu bạn không có thực hiện các biện pháp phòng bị. Nếu bạn chưa quen với Darknet, bài viết này sẽ giúp bạn đứng vững trên con đường của mình.",
+        },
+        {
+            image: "bgNews4.jpg", // Thay bgNews4 bằng đường dẫn hình ảnh thực tế
+            title: "Content là gì? Cách nhận biết & khác phục vấn đề nội dung mỏng trên website",
+            description: "Khám phá Content là gì? TÌm hiểu định nghĩa, vai trò và cách ứng dụng content hiệu quả trong chiến lượt content marketing. Tìm hiểu ngay",
+        },
+        {
+            image: "bgNews5.jpg", // Thay bgNews5 bằng đường dẫn hình ảnh thực tế
+            title: "Các cách tấn công của Hacker dùng để chiếm quyền tài khoản của bạn",
+            description: "Đây là tổng hợp một số phương thức chiếm quyền tài khoản mà Hacker thường sử dụng để tấn công bạn. Cùng tìm hiểu để biết cách nhận diện và có cách phòng chống tránh bị mất dữ liệu nhé. Bài viết của bạn Trương Hiếu đăng trên J2Team.",
+        },
+        {
+            image: "bgNews6.jpg", // Thay bgNews6 bằng đường dẫn hình ảnh thực tế
+            title: "Hướng dẫn tự lập trình bằng Blackbox AI",
+            description: "Khám phá Blackbox AI – Trợ thủ đắc lực cho lập trình viên với tính năng Code Chat, tích hợp Github và chuyển hình ảnh thành code dễ dàng! Thanh Kim by Thanh Kimin Phần mềm máy tính Blackbox AI đang trở thành một cái tên nổi bật trong cộng đồng lập trình viên nhờ khả năng hỗ trợ vượt trội trong việc tối ưu hóa quy trình viết mã. Đây không chỉ là một công cụ thông thường, mà còn là một trợ lý ảo thông minh, sẵn sàng đồng hành cùng bạn trong mọi dự án coding. Hãy cùng khám phá xem điều gì khiến công cụ này thu hút đến vậy!",
+        }
+    ];
+
+
+    // Load news when the page loads
+    window.onload = renderNews;
+
+
+
+</script>
+
+
+</html>

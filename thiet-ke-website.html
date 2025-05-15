@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/04mediaicon.ico" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/service/thiet-ke-website.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Thiết kế website</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('sticky');
+                else header.classList.remove('sticky');
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const headerMobile = document.querySelector('.headerMobile'); // hoặc '#headerMobile' nếu là ID
+
+            if (headerMobile) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        headerMobile.classList.add('sticky');
+                    } else {
+                        headerMobile.classList.remove('sticky');
+                    }
+                });
+            } else {
+                console.warn('Không tìm thấy phần tử headerMobile');
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Header desktop -->
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <a href="/">
+                    <img src="assets/04media.svg" alt="Logo">
+                </a>
+                <div class="boxRight">
+                    <ul>
+                        <li><a href="/">TRANG CHỦ</a></li>
+                        <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                        <li class="service">
+                            <a href="#">DỊCH VỤ</a>
+                            <ul class="subMenu">
+                                <li><a href="/chay-quang-cao-facebook.html">Chạy quảng cáo Facebook</a></li>
+                                <li><a href="/ho-tro-facebook.html">Hỗ trợ Facebook</a></li>
+                                <li><a href="/thiet-ke-landing-page.html">Thiết kế Landing page</a></li>
+                                <li><a href="/thiet-ke-website.html" class="active">Thiết kế Website</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/tin-tuc.html">TIN TỨC</a></li>
+                        <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+                    </ul>
+                    <span class="btns" data-bs-toggle="modal" data-bs-target="#exampleModal">ĐĂNG KÝ TƯ VẤN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <form action="https://formspree.io/f/xyzwdeya" method="POST" class="contactForm">
+                    <h1>NHẬN TƯ VẤN TẠI ĐÂY</h1>
+                    <input type="text" name="fullName" placeholder="Họ tên" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="text" name="phone" placeholder="Số điện thoại" />
+
+                    <select name="service">
+                        <option value="choose" selected>Chọn dịch vụ</option>
+                        <option value="ads">Quảng cáo Facebook</option>
+                        <option value="dvfb">Hỗ trợ Facebook</option>
+                        <option value="website">Thiết kế website</option>
+                        <option value="landing">Thiết kế landing page</option>
+
+                    </select>
+
+                    <textarea name="message" placeholder="Nội dung tin nhắn"></textarea>
+
+                    <div class="btnSend">
+                        <button type="">
+                            <span>gửi ngay</span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Header mobile -->
+    <header class="headerMobile">
+        <div class="container">
+            <div class="navMenu">
+                <div class="boxMobileLeft">
+                    <a href="/">
+                        <div class="boxMobileLeft">
+                            <img src="assets/04media.svg" alt="Logo">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="boxMobileRight">
+                    <input type="checkbox" id="clickCheck" class="menuToggle" hidden>
+                    <label for="clickCheck" class="menuIcon"><i class="fas fa-bars"></i></label>
+
+                    <div class="menuMobile">
+                        <ul class="navList">
+                            <li class="headerMenu mt-3">
+                                <img src="assets/04media.svg" alt="Logo">
+                                <label for="clickCheck"><i class="fas fa-times"></i></label>
+                            </li>
+                            <hr>
+                            <li><a href="/">TRANG CHỦ</a></li>
+                            <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                            <li class="service">
+                                <a href="#">DỊCH VỤ</a>
+                                <ul class="subMenu">
+                                    <li><a href="/chay-quang-cao-facebook.html">Chạy quảng cáo Facebook</a></li>
+                                    <li><a href="/ho-tro-facebook.html">Hỗ trợ Facebook</a></li>
+                                    <li><a href="/thiet-ke-landing-page.html">Thiết kế Landing page</a></li>
+                                    <li><a href="/thiet-ke-website.html">Thiết kế Website</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/tin-tuc.html">TIN TỨC</a></li>
+                            <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                    <label for="clickCheck" class="overlay"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="section1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="contentSection1">
+                        <h1>DỊCH VỤ THIẾT KẾ WEBSITE</h1>
+                        <p>
+                            Dịch vụ thiết kế website chuyên nghiệp chính là chìa khóa giúp doanh nghiệp bứt phá trong kỷ
+                            nguyên số.
+                            Chúng tôi mang đến giải pháp thiết kế chuyên nghiệp, tối ưu trải nghiệm người dùng và chuẩn
+                            SEO,
+                            giúp thương hiệu của bạn nổi bật, thu hút khách hàng và nâng cao hiệu quả kinh doanh trực
+                            tuyến.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="boxBanner">
+                        <img src="./assets/sectionweb.png" alt="Thiết kế website chuyên nghiệp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section2">
+        <div class="container">
+            <h1 class="titleSection2">THIẾT KẾ WEB <span>ĐA NGÀNH</span></h1>
+
+            <!-- Slider bắt đầu -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="my-slider">
+                        <div class="slideItem">
+                            <div class="boxCategory">
+                                <img src="./assets/website/cvd-compressed.jpg" alt="Thời Trang" />
+                                <span>Thời Trang</span>
+                            </div>
+                        </div>
+                        <div class="slideItem">
+                            <div class="boxCategory">
+                                <img src="./assets/website/image-46-compressed.jpg" alt="Mỹ phẩm" />
+                                <span>Mỹ phẩm</span>
+                            </div>
+                        </div>
+                        <div class="slideItem">
+                            <div class="boxCategory">
+                                <img src="./assets/website/nganh-ban-hang-online.jpg" alt="Bán hàng online" />
+                                <span>Bán hàng online</span>
+                            </div>
+                        </div>
+                        <div class="slideItem">
+                            <div class="boxCategory">
+                                <img src="./assets/website/nganh-bat-dong-san.jpg" alt="Bất động sản" />
+                                <span>Bất động sản</span>
+                            </div>
+                        </div>
+                        <div class="slideItem">
+                            <div class="boxCategory">
+                                <img src="./assets/website/nganh-du-lich.jpg" alt="Du lịch" />
+                                <span>Du lịch</span>
+                            </div>
+                        </div>
+                        <div class="slideItem">
+                            <div class="boxCategory">
+                                <img src="./assets/website/nganh-noi-that-1.jpg" alt="Nội thất" />
+                                <span>Nội thất</span>
+                            </div>
+                        </div>
+                        <div class="slideItem">
+                            <div class="boxCategory">
+                                <img src="./assets/website/nganh-xay-dung.jpg" alt="Xây dựng" />
+                                <span>Xây dựng</span>
+                            </div>
+                        </div>
+                        <div class="slideItem">
+                            <div class="boxCategory">
+                                <img src="./assets/website/web-tin-tuc.jpg" alt="Tin tức" />
+                                <span>Tin tức</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider kết thúc -->
+
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="container">
+            <div class="contentSection3">
+                <h1>Bảng Giá Thiết Kế Website</h1>
+                <p>Chúng tôi cung cấp các gói thiết kế web với mức giá cạnh tranh trên thị trường.</p>
+            </div>
+            <div class="row">
+                <!-- Gói cơ bản -->
+                <div class="col-lg-4 mt-4 hot">
+                    <div class="combo">
+                        <div class="comboTitle">
+                            <span>Gói cơ bản</span>
+                            <h2>6.000.000đ</h2>
+                        </div>
+                        <div class="comboBody">
+                            <p>Website cơ bản</p>
+                            <p>Tìm kiếm cơ bản</p>
+                            <p>Tặng tên miền .com .net</p>
+                            <p>SSL Security: có</p>
+                            <p>Cấu trúc chuẩn SEO Google</p>
+                            <p>Tặng 1 thiết kế banner</p>
+                            <p>Responsive: Hiển thị PC/Tablet/Mobile</p>
+                            <p>Bảo hành: vĩnh viễn nếu dùng hosting bên mình</p>
+                            <div class="btnLienHe">
+                                <button onclick="openModal()">LIÊN HỆ TƯ VẤN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói phổ thông -->
+                <div class="col-lg-4 mt-4 position-relative hot">
+                    <img src="./assets/iconhot.png" class="imageHot" alt="" />
+                    <div class="combo">
+                        <div class="comboTitle">
+                            <span>Gói phổ thông</span>
+                            <h2>9.000.000đ</h2>
+                        </div>
+                        <div class="comboBody">
+                            <p>Website cơ bản</p>
+                            <p>Giỏ hàng</p>
+                            <p>Tặng tên miền .com .net</p>
+                            <p>SSL Security: có</p>
+                            <p>Cấu trúc chuẩn SEO Google</p>
+                            <p>Tặng 3 thiết kế banner</p>
+                            <p>Responsive: Hiển thị PC/Tablet/Mobile</p>
+                            <p>Bảo hành: vĩnh viễn nếu dùng hosting bên mình</p>
+                            <div class="btnLienHe">
+                                <button onclick="openModal()">LIÊN HỆ TƯ VẤN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gói Premium -->
+                <div class="col-lg-4 mt-4 hot">
+                    <div class="combo">
+                        <div class="comboTitle">
+                            <span>Gói Premium</span>
+                            <h2 style="font-size: 32px;">Liên hệ báo giá</h2>
+                        </div>
+                        <div class="comboBody">
+                            <p>Đăng ký / Đăng nhập</p>
+                            <p>Phân quyền quản trị</p>
+                            <p>Xuất / Nhập Excel</p>
+                            <p>Thiết kế UX/UI</p>
+                            <p>Thanh toán online</p>
+                            <p>Tặng 5 thiết kế banner</p>
+                            <p>Responsive: Hiển thị PC/Tablet/Mobile</p>
+                            <p>Bảo hành: vĩnh viễn nếu dùng hosting bên mình</p>
+                            <div class="btnLienHe">
+                                <button onclick="openModal()">LIÊN HỆ TƯ VẤN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- section 4 -->
+    <section class="section4">
+        <div class="container">
+            <div class="row">
+                <!-- Cột trái -->
+                <div class="col-lg-6 mt-4">
+                    <div class="boxQuiTrinhLeft">
+                        <h1>Tổng quan qui trình tạo nên website chất lượng của chúng tôi</h1>
+                        <img src="./assets/quitrinh.png" alt="" />
+                    </div>
+                </div>
+
+                <!-- Cột phải -->
+                <div class="col-lg-6 mt-4">
+                    <div class="contentQuiTrinh">
+                        <ul>
+                            <li>
+                                <div><i class="fas fa-check-circle"></i></div>
+                                <div class="content">
+                                    <span>B1: Tiếp nhận khách hàng</span>
+                                    <p>Bộ phận account tiếp nhận yêu cầu của khách hàng, lắng nghe những vấn đề và nỗi
+                                        đau khách hàng cần giải quyết</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class="fas fa-check-circle"></i></div>
+                                <div class="content">
+                                    <span>B2: Nghiên cứu và phân tích yêu cầu</span>
+                                    <p>Các phòng ban liên quan sẽ thảo luận và thống nhất giải pháp tối ưu nhất cho
+                                        những vấn đề của khách hàng.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class="fas fa-check-circle"></i></div>
+                                <div class="content">
+                                    <span>B3: Phác thảo, thiết kế mềm</span>
+                                    <p>Bộ phận thiết kế tiến hành phác thảo bản demo dựa trên yêu cầu và giải pháp thống
+                                        nhất. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class="fas fa-check-circle"></i></div>
+                                <div class="content">
+                                    <span>B4: Nhận phản hồi từ khách</span>
+                                    <p>MONA sẽ tiếp nhận phản hồi và điều chỉnh bản demo liên tục để phù hợp với nhu cầu
+                                        của khách hàng</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class="fas fa-check-circle"></i></div>
+                                <div class="content">
+                                    <span>B5: Tiến hành lập trình</span>
+                                    <p>Website được đưa vào giai đoạn lập trình với quy trình phù hợp đảm bảo đúng tiến
+                                        độ và hoàn thiện tất cả tính năng cũng như giao diện như bản đã thống nhất với
+                                        khách hàng trong giai đoạn phản hồi.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class="fas fa-check-circle"></i></div>
+                                <div class="content">
+                                    <span>B6: Audit chuẩn SEO</span>
+                                    <p>Xây dựng cấu trúc website chuẩn SEO, tạo các liên kết, gắn mã các công cụ SEO và
+                                        tool hỗ trợ chất lượng.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class="fas fa-check-circle"></i></div>
+                                <div class="content">
+                                    <span>B7: Hướng dẫn sử dụng và hỗ trợ</span>
+                                    <p>MONA cung cấp bộ hướng dẫn chi tiết riêng cho từng dự án. Đội ngũ hỗ trợ luôn sẵn
+                                        sàng giải đáp thắc mắc và hỗ trợ thao tác nếu cần thiết để đảm bảo khách hàng
+                                        quản trị tốt website</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><i class="fas fa-check-circle"></i></div>
+                                <div class="content">
+                                    <span>B8: Bàn giao dự án</span>
+                                    <p>Nguyên tắc hoạt động của phần mềm. Vẫn tiếp tục đồng hành và hỗ trợ nếu khách
+                                        hàng gặp khó khăn trong việc quản trị website</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="./assets/04media-nobg.svg" alt="VNS Logo" class="img-fluid mb-3">
+                    <p>
+                        VNS cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị
+                        chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng
+                        dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
+                        Tận tâm với khách hàng luôn là trách nhiệm của chúng tôi !
+                    </p>
+                    <p><strong>Địa chỉ:</strong> 42/1 Tân thới nhất 3, Phường Tân Thới Nhất, Quận 12, TP. Hồ Chí Minh
+                    </p>
+                    <p><strong>Số điện thoại:</strong> 032714982</p>
+                    <p><strong>Email:</strong> lck.dev701@gmail.com</p>
+                    <p><strong>Thời gian hoạt động:</strong> 9h00 - 23h59</p>
+                    <p>Copyright &copy; 2025</p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxCenter">
+                        <h3>DỊCH VỤ</h3>
+                        <p>Chạy quảng cáo Facebook</p>
+                        <p>Hỗ trợ Facebook</p>
+                        <p>Thiết kế website</p>
+                        <p>Thiết kế landing page</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxSendInfo">
+                        <h3>CHÍNH SÁCH QUI ĐỊNH</h3>
+                        <p>Điều khoản sử dụng</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Thoả thuận sử dụng dịch vụ</p>
+                        <p>Hỗ trợ khách hàng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('.my-slider').slick({
+            centerMode: true,
+            infinite: true,
+            centerPadding: '60px',
+            slidesToShow: 5,
+            swipeToSlide: true,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                }
+            ]
+        });
+
+        $('.my-slider').on('afterChange', function (event, slick, currentSlide) {
+            console.log(`Slider Changed to: ${currentSlide + 1}, background: #222; color: #bada55`);
+        });
+    });
+</script>
+
+</html>

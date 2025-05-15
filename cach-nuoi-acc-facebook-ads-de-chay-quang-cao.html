@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/04mediaicon.ico" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/tin-tuc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Cách nuôi Acc Facebook Ads để chạy quảng cáo</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('sticky');
+                else header.classList.remove('sticky');
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const headerMobile = document.querySelector('.headerMobile'); // hoặc '#headerMobile' nếu là ID
+
+            if (headerMobile) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        headerMobile.classList.add('sticky');
+                    } else {
+                        headerMobile.classList.remove('sticky');
+                    }
+                });
+            } else {
+                console.warn('Không tìm thấy phần tử headerMobile');
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Header desktop -->
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <a href="/">
+                    <img src="assets/04media.svg" alt="Logo">
+                </a>
+                <div class="boxRight">
+                    <ul>
+                        <li class="active"><a href="/">TRANG CHỦ</a></li>
+                        <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                        <li class="service">
+                            <a href="#">DỊCH VỤ</a>
+                            <ul class="subMenu">
+                                <li><a href="/chay-quang-cao-facebook.html">Chạy quảng cáo Facebook</a></li>
+                                <li><a href="/ho-tro-facebook.html">Hỗ trợ Facebook</a></li>
+                                <li><a href="/thiet-ke-landing-page.html">Thiết kế Landing page</a></li>
+                                <li><a href="/thiet-ke-website.html">Thiết kế Website</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/tin-tuc.html" class="active">TIN TỨC</a></li>
+                        <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+                    </ul>
+                    <span class="btns" data-bs-toggle="modal" data-bs-target="#exampleModal">ĐĂNG KÝ TƯ VẤN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <form action="https://formspree.io/f/xyzwdeya" method="POST" class="contactForm">
+                    <h1>NHẬN TƯ VẤN TẠI ĐÂY</h1>
+                    <input type="text" name="fullName" placeholder="Họ tên" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="text" name="phone" placeholder="Số điện thoại" />
+
+                    <select name="service">
+                        <option value="choose" selected>Chọn dịch vụ</option>
+                        <option value="ads">Quảng cáo Facebook</option>
+                        <option value="dvfb">Hỗ trợ Facebook</option>
+                        <option value="website">Thiết kế website</option>
+                        <option value="landing">Thiết kế landing page</option>
+
+                    </select>
+
+                    <textarea name="message" placeholder="Nội dung tin nhắn"></textarea>
+
+                    <div class="btnSend">
+                        <button type="">
+                            <span>gửi ngay</span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Header mobile -->
+    <header class="headerMobile">
+        <div class="container">
+            <div class="navMenu">
+                <div class="boxMobileLeft">
+                    <a href="/">
+                        <div class="boxMobileLeft">
+                            <img src="assets/04media.svg" alt="Logo">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="boxMobileRight">
+                    <input type="checkbox" id="clickCheck" class="menuToggle" hidden>
+                    <label for="clickCheck" class="menuIcon"><i class="fas fa-bars"></i></label>
+
+                    <div class="menuMobile">
+                        <ul class="navList">
+                            <li class="headerMenu mt-3">
+                                <img src="assets/04media.svg" alt="Logo">
+                                <label for="clickCheck"><i class="fas fa-times"></i></label>
+                            </li>
+                            <hr>
+                            <li><a href="/">TRANG CHỦ</a></li>
+                            <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                            <li class="service">
+                                <a href="#">DỊCH VỤ</a>
+                                <ul class="subMenu">
+                                    <li><a href="/chay-quang-cao-facebook.html">Chạy quảng cáo Facebook</a></li>
+                                    <li><a href="/ho-tro-facebook.html">Hỗ trợ Facebook</a></li>
+                                    <li><a href="/thiet-ke-landing-page.html">Thiết kế Landing page</a></li>
+                                    <li><a href="/thiet-ke-website.html">Thiết kế Website</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/tin-tuc.html" class="active">TIN TỨC</a></li>
+                            <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                    <label for="clickCheck" class="overlay"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container mb-5">
+        <div class="row">
+
+            <div class="col-lg-8 mt-4">
+                <main class="mains">
+                    <h3 class="titleNewsPost">Cách nuôi Acc Facebook Ads để chạy quảng cáo</h3>
+                    <p class="des">
+                        Cách tạo tài khoản cá nhân, tài khoản quảng cáo dễ được trả sau + khả năng sống cao. <br>
+                        Dù không biết là bao giờ fix hoàn toàn nhưng nếu ít 1-2 cái thì chắc vẫn còn cửa, hi vọng mọi
+                        người tranh thủ làm thêm vài cái mà dự phòng.
+                    </p>
+                    <p>
+                        Thao tác chủ yếu trên điện thoại và đường mạng, thiết bị đăng nhập, thẻ visa khác hoàn toàn
+                        không nên chung với hệ thống cũ.
+                    </p>
+                    <ul>
+                        <li>Mỗi bước cần chắc chắn thời gian thì nên để thời gian nuôi 1-2 ngày.</li>
+                        <li>Nếu bị khoá sau khi tạo thì phải ngưng cách ngày ra mới thực hiện tiếp.</li>
+                        <li>Nội dung – trang – hình ảnh sử dụng cho quảng cáo phải mới hoàn toàn chưa từng được đăng tải
+                            ở đâu.</li>
+                    </ul>
+
+                    <h5>1. Lập tài khoản cá nhân</h5>
+                    <p>Đăng kí bằng điện thoại, cái này đơn giản rồi. Nhớ tải một app khác Facebook, có thể là trình
+                        duyệt Opera, Cốc Cốc … đăng kí từ đó. Cẩn thận có thể dùng một chiếc điện thoại mới.</p>
+                    <p>Nhớ có sim điện thoại xác thực đi kèm. Vào trong cài đặt thêm Email đăng nhập, lưu ý sử dụng
+                        email mới chưa từng đăng kí sử dụng với Facebook.</p>
+                    <p>Đăng kí xong điền thông tin của mình nhưng khác thông tin mà mình đã khai báo trên tài khoản
+                        Facebook khác trước đây:</p>
+                    <p>Ví dụ bạn sống ở HN, vẫn ghi là HN nhưng không ghi tới từ Quảng Ninh mà chuyển sang Hải Phòng.
+                        Sau đó các trường cấp 3, trường cấp 2 cũng liên quan như thế. Tuyệt đối không chọn trường cấp 3
+                        có ở Đà Nẵng hay Hồ Chí Minh.</p>
+                    <p>Đăng các ảnh tự chụp bằng di động lên tài khoản cá nhân. Kết bạn với ai đó không phải là bạn.</p>
+                    <p>Tài khoản này có thể để tên bạn nhưng sử dụng giấy tờ xác thực khác với giấy tờ bạn từng dùng ở
+                        các tài khoản khác. Tên có thể đảo, bỏ dấu ví dụ: Tài khoản gốc là Trần Công Thành tài khoản mới
+                        có thể là Tran Thanh Cong, Cong Thanh Tran, Công Thành Trấn …</p>
+                    <p><em>* Tuyệt đối quan trọng: không đăng lại nội dung nhất là hình ảnh đã được đăng tải ở trên tài
+                            khoản cũ, để nội dung các tài khoản giống nhau y hệt.</em></p>
+
+                    <h5>2. Thêm thẻ</h5>
+                    <p>Nếu sử dụng app Facebook bạn có thể thêm thẻ trực tiếp tại phần Cài đặt, Thanh toán trong app.
+                    </p>
+                    <img src="./assets/news2/anh1.png" alt="" style="width: 100%;">
+                    <p>Nếu sử dụng các trình duyệt thì cần làm một bước trung gian đó là đăng nhập tài khoản trên ở máy
+                        tính, nhớ tạo profile Chrome, Cốc Cốc mới hoặc trình duyệt web khác để tránh trùng lịch sử đăng
+                        nhập.</p>
+                    <img src="./assets/news2/anh2.png" alt="" style="width: 100%;">
+                    <p>Chờ tiếp qua ngày để tài khoản ổn định.</p>
+
+                    <h5>3. Tạo cam</h5>
+                    <p>Bắt đầu từ bước này lưu ý quan trọng là thực hiện tất cả bằng điện thoại.</p>
+                    <p>Tìm 1 trang để tạo quảng cáo, trang này phải uy tín chưa từng có lịch sử bị khoá tài khoản hoặc
+                        từ chối quảng cáo. Chia sẻ quyền biên tập viên với tài khoản Facebook mới.</p>
+                    <p>Sau đó thì đăng một bài viết mới từ chính tài khoản Facebook. Nội dung dạng text không cần phải
+                        chau chuốt. Có thể viết dạng đơn giản kiểu:</p>
+                    <ul>
+                        <li>Ngày mai Hà Nội thời tiết rất đẹp.</li>
+                        <li>Tôi yêu Hà Nội.</li>
+                    </ul>
+                    <p>Tuyệt đối không trực tiếp quảng cáo sản phẩm/dịch vụ của mình trong chiến dịch đầu tiên, nhất là
+                        các sản phẩm sức khoẻ làm đẹp. Nội dung của quảng cáo đầu tiên hãy nghĩ thật đơn giản, tích cực,
+                        không cần dài dòng làm gì.</p>
+
+                    <p>Dùng điện thoại Boot Post bài viết trên:</p>
+                    <ul>
+                        <li>Ngân sách ngẫu nhiên 23, 35, 45, 101k … với thời gian 1-3 ngày</li>
+                        <li>Đối tượng chỉnh lại độ tuổi nhỏ hơn ngẫu nhiên, thay mặc định 18-65 thành 18-35, 20-44….
+                        </li>
+                    </ul>
+
+                    <p>Nếu có yêu cầu thêm thẻ thì thêm thẻ một lần nữa.</p>
+                    <img src="./assets/news2/anh3.png" alt="" style="width: 100%;">
+                    <p>Để cho ads đó tiêu hết ngưỡng thanh toán đầu tiên (43-69k … ) thì ta tiếp tục tạo chiến dịch thứ
+                        2 ở trên các trang bán sản phẩm. Nếu bạn muốn chắc ăn, có thể để tài khoản qua ngưỡng 220k, có
+                        thể tiêu 1 triệu mới phải thanh toán hẵng tạo quảng cáo bán sản phẩm dịch vụ.</p>
+                </main>
+            </div>
+
+
+
+            <div class="col-lg-4">
+                <span class="titlePostHighlight">Dịch vụ</span>
+                <div class="line"></div>
+                <div class="boxPostNew">
+                    <div class="boxImagePostNew">
+                        <img src="./assets/servicefbads.jpg" alt="Mô tả hình ảnh" />
+                    </div>
+                    <div class="contentPostNew">
+                        <a href="./chay-quang-cao-facebook.html" class="ttNews">
+                            Quảng cáo Facebook như thế nào là hiệu quả
+                        </a>
+                        <a href="./chay-quang-cao-facebook.html" class="action">XEM NGAY</a>
+                    </div>
+                </div>
+                <div class="boxPostNew">
+                    <div class="boxImagePostNew">
+                        <img src="./assets/servicefbunlock.jpg" alt="Mô tả hình ảnh" />
+                    </div>
+                    <div class="contentPostNew">
+                        <a href="./ho-tro-facebook.html" class="ttNews">
+                            Hỗ trợ Facebook
+                        </a>
+                        <a href="./ho-tro-facebook.html" class="action">XEM NGAY</a>
+                    </div>
+                </div>
+                <div class="boxPostNew">
+                    <div class="boxImagePostNew">
+                        <img src="./assets/servicelanding.jpg" alt="Mô tả hình ảnh" />
+                    </div>
+                    <div class="contentPostNew">
+                        <a href="./thiet-ke-landing-page.html" class="ttNews">
+                            Thiết kế landing page
+                        </a>
+                        <a href="./thiet-ke-landing-page.html" class="action">XEM NGAY</a>
+                    </div>
+                </div>
+                <div class="boxPostNew">
+                    <div class="boxImagePostNew">
+                        <img src="./assets/servicewebsite.jpg" alt="Mô tả hình ảnh" />
+                    </div>
+                    <div class="contentPostNew">
+                        <a href="./thiet-ke-website.html" class="ttNews">
+                            Thiết kế website
+                        </a>
+                        <a href="./thiet-ke-website.html" class="action">XEM NGAY</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="./assets/04media-nobg.svg" alt="VNS Logo" class="img-fluid mb-3">
+                    <p>
+                        VNS cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị
+                        chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng
+                        dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
+                        Tận tâm với khách hàng luôn là trách nhiệm của chúng tôi !
+                    </p>
+                    <p><strong>Địa chỉ:</strong> 42/1 Tân thới nhất 3, Phường Tân Thới Nhất, Quận 12, TP. Hồ Chí Minh
+                    </p>
+                    <p><strong>Số điện thoại:</strong> 032714982</p>
+                    <p><strong>Email:</strong> lck.dev701@gmail.com</p>
+                    <p><strong>Thời gian hoạt động:</strong> 9h00 - 23h59</p>
+                    <p>Copyright &copy; 2025</p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxCenter">
+                        <h3>DỊCH VỤ</h3>
+                        <p>Chạy quảng cáo Facebook</p>
+                        <p>Hỗ trợ Facebook</p>
+                        <p>Thiết kế website</p>
+                        <p>Thiết kế landing page</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxSendInfo">
+                        <h3>CHÍNH SÁCH QUI ĐỊNH</h3>
+                        <p>Điều khoản sử dụng</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Thoả thuận sử dụng dịch vụ</p>
+                        <p>Hỗ trợ khách hàng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>

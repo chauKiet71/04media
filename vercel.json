@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/chay-quang-cao-facebook",
+            "destination": "/chay-quang-cao-facebook.html"
+        }
+    ]
+}

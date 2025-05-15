@@ -1,0 +1,176 @@
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0px;
+    color: #2f679a;
+}
+
+.titlePostHighlight {
+    font-size: 18px;
+    color: #4e4e4e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 100px;
+    border-bottom: 3px solid #2f679a;
+    margin: 5px 0px 10px 0px;
+}
+
+.titleNewsPost {
+    color: #2a2a2a;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    margin-bottom: 1.25rem;
+    font-weight: 630;
+}
+
+.des {
+    color: #404040;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.625rem;
+    margin: 1.25rem 0;
+}
+
+.mains h3 {
+    font-weight: 600;
+}
+
+.tienich ul {
+    padding-top: 10px;
+}
+
+.tienich ul li {
+    padding: 5px 0px;
+}
+
+.postNews {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* .boxImage{
+    width: 30%;
+} */
+.boxImage img {
+    width: 100%;
+}
+
+/* .boxContent {
+    width: 70%;
+    margin-left: 20px;
+} */
+
+.boxContent h4 {
+    font-size: 20px;
+}
+
+.boxContent p {
+    margin-bottom: 10px;
+}
+
+.boxContent a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.boxContent a:hover {
+    color: red
+}
+
+.boxPostNew {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.boxImagePostNew {
+    width: 30%;
+}
+
+.boxImagePostNew img {
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+}
+
+.contentPostNew {
+    width: 66%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ttNews {
+    font-weight: 600;
+    font-size: 18px !important;
+    color: #333 !important;
+}
+
+.action {
+    margin: 0;
+    font-size: 14px;
+    color: #2f679a !important;
+}
+
+.boxNews {
+    box-shadow: 2px 2px 5px 2px rgba(157, 155, 155, 0.3);
+    padding: 0px 0px 1rem 0px;
+}
+
+.contentPostNew a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+
+.active {
+    color: #2174d3 !important;
+}
+
+
+.paginations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.page-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    /* border-radius: 8px; */
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    min-width: 40px;
+}
+
+.page-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+    color: #007bff;
+}
+
+.page-btn.actives {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+.page-btn:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: default;
+    border-color: #ddd;
+}

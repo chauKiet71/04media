@@ -1,0 +1,47 @@
+.boxLelf {
+    width: 100%;
+}
+
+.boxLelf p {
+    margin-bottom: 5px;
+}
+
+.boxCenter h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #366e9f;
+}
+
+.boxCenter p {
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 576px) {
+    .header {
+        display: none;
+    }
+}
+
+.boxSendInfo h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #366e9f;
+}
+
+footer {
+    background-color: #303133;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/bg-dt.jpg);
+    color: #fff;
+    padding: 50px 0px;
+}
+
+@media (max-width: 576px) {
+    .section1 {
+        margin: 40px 0px;
+    }
+
+    footer {
+        padding: 20px 0px !important;
+    }
+}

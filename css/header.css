@@ -1,0 +1,538 @@
+.header {
+    position: relative;
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background-color: transparent;
+    z-index: 999;
+}
+
+/* Khi scroll xuống => sticky + hiệu ứng rơi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    animation: dropDown 0.3s ease forwards;
+}
+
+/* Animation hiệu ứng rơi */
+@keyframes dropDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxRight {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.boxRight ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.boxRight ul li {
+    position: relative;
+}
+
+.boxRight ul li a:hover {
+    color: rgb(60, 150, 247);
+    transition: 0.3s;
+}
+
+
+.boxRight ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.boxRight span {
+    background: linear-gradient(45deg, #008cff, #eff0f1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.service {
+    position: relative;
+}
+
+.subMenu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 210px;
+    transition: 0.3s ease;
+}
+
+.subMenu li {
+    padding: 8px 16px;
+}
+
+.subMenu li:hover {
+    background-color: #f0f0f0;
+}
+
+.service:hover .subMenu {
+    display: block !important;
+    transition: 0.3s ease;
+}
+
+
+.subMenu li a {
+    display: block;
+}
+
+/* button */
+
+.btns {
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    color: #c0adad;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.btns::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+/* glow */
+.btns::before {
+    content: "";
+    background: linear-gradient(45deg,
+            #008cff, #eff0f1, #008cff, #fff);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.headerMobile {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .header {
+        display: none;
+    }
+
+    .headerMobile {
+        display: block;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        z-index: 9999999;
+    }
+
+    .menuMobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: #f3f3f3;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in-out;
+        z-index: 99999999;
+    }
+
+    .menuIcon {
+        z-index: 9999 !important;
+    }
+
+    .headerMenu {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .headerMenu svg {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        color: #c6c5c5;
+    }
+
+    .menuMobile ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menuMobile ul li {
+        padding: 8px 40px;
+        justify-content: space-between;
+    }
+
+    .menuMobile ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menuToggle:checked+.menuIcon+.menuMobile {
+        transform: translateX(0);
+    }
+
+    .menuToggle:checked+.menuIcon+.menuMobile+.overlay {
+        display: block;
+    }
+
+    .menuToggle:checked+.menuIcon+.overlay {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9;
+        height: 100vh;
+    }
+
+    .navMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuIcon svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contactForm {
+        padding: 20px 20px !important;
+    }
+}
+
+
+
+
+@media (max-width: 577px) and (min-width: 1024px) {}
+
+.contactForm {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    padding: 30px 30px;
+}
+
+.contactForm h1 {
+    color: #3599da;
+    margin: 0px 0px 8px 0px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.contactForm h4 {
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid rgb(210, 205, 205);
+}
+
+
+.contactForm input:focus,
+.contactForm textarea:focus,
+.contactForm select:focus {
+    border: 1px solid #66afe9;
+    /* viền xanh nhạt */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+    /* ánh sáng mờ */
+}
+
+.contactForm textarea {
+    height: 120px;
+}
+
+.contactForm .row input {
+    width: 50%;
+    outline: 2px solid #00bfff;
+}
+
+
+.btnSend button {
+    border: none;
+    padding: 10px 50px;
+    background: linear-gradient(0deg, rgba(46, 226, 230, 1) 0%, rgba(92, 130, 255, 1) 100%, rgba(45, 204, 253, 1) 100%);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.btnSend img {
+    width: 50px;
+    height: 30px;
+    /* object-fit: cover; */
+}
+
+.btnSend span {
+    text-transform: uppercase;
+    margin-left: 3px;
+    text-align: center;
+}
+
+.contactForm select {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border: 1px solid rgb(210, 205, 205);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    appearance: none;
+    outline: none;
+    color: grey;
+    /* ẩn mũi tên mặc định nếu muốn tự thiết kế */
+}
+
+.titleLienHe {
+    padding: 0px 20px;
+}
+
+.modalTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.modalTitle h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .btnSend button {
+        font-size: 14px !important;
+    }
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    color: #2f679a;
+}
+
+.boxInfo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.boxIcon {
+    background: linear-gradient(45deg, #008cff, #eff0f1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.boxIcon svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.boxContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.boxContent p {
+    margin-bottom: 5px;
+}
+
+.socialIcon {
+    display: flex;
+}
+
+.icon {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.icon:hover {
+    background-color: #008cff;
+    transition: 0.3s ease;
+}
+
+.boxSocial h3 {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+
+.icon {
+    display: block;
+    position: relative;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #444;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 10;
+    color: #333;
+}
+
+.icon:hover {
+    color: #fff;
+}
+
+.icon:after {
+    position: absolute !important;
+    content: "";
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    display: block;
+    position: relative;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    right: 8px;
+    top: 8px;
+    background-color: #008cff;
+    visibility: hidden;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 1\9;
+    visibility: visible\9;
+    display: none\9;
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    z-index: -1;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.icon:hover:after {
+    visibility: visible;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    display: block\9;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+
+@media (max-width: 576px) {
+    .title {
+        margin: 0;
+        margin-top: 30px;
+    }
+}

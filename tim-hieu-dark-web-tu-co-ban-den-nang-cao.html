@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/04mediaicon.ico" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/tin-tuc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Cách nuôi Acc Facebook Ads để chạy quảng cáo</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('sticky');
+                else header.classList.remove('sticky');
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const headerMobile = document.querySelector('.headerMobile'); // hoặc '#headerMobile' nếu là ID
+
+            if (headerMobile) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        headerMobile.classList.add('sticky');
+                    } else {
+                        headerMobile.classList.remove('sticky');
+                    }
+                });
+            } else {
+                console.warn('Không tìm thấy phần tử headerMobile');
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Header desktop -->
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <a href="/">
+                    <img src="assets/04media.svg" alt="Logo">
+                </a>
+                <div class="boxRight">
+                    <ul>
+                        <li class="active"><a href="/">TRANG CHỦ</a></li>
+                        <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                        <li class="service">
+                            <a href="#">DỊCH VỤ</a>
+                            <ul class="subMenu">
+                                <li><a href="/chay-quang-cao-facebook.html">Chạy quảng cáo Facebook</a></li>
+                                <li><a href="/ho-tro-facebook.html">Hỗ trợ Facebook</a></li>
+                                <li><a href="/thiet-ke-landing-page.html">Thiết kế Landing page</a></li>
+                                <li><a href="/thiet-ke-website.html">Thiết kế Website</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/tin-tuc.html" class="active">TIN TỨC</a></li>
+                        <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+                    </ul>
+                    <span class="btns" data-bs-toggle="modal" data-bs-target="#exampleModal">ĐĂNG KÝ TƯ VẤN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <form action="https://formspree.io/f/xyzwdeya" method="POST" class="contactForm">
+                    <h1>NHẬN TƯ VẤN TẠI ĐÂY</h1>
+                    <input type="text" name="fullName" placeholder="Họ tên" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="text" name="phone" placeholder="Số điện thoại" />
+
+                    <select name="service">
+                        <option value="choose" selected>Chọn dịch vụ</option>
+                        <option value="ads">Quảng cáo Facebook</option>
+                        <option value="dvfb">Hỗ trợ Facebook</option>
+                        <option value="website">Thiết kế website</option>
+                        <option value="landing">Thiết kế landing page</option>
+
+                    </select>
+
+                    <textarea name="message" placeholder="Nội dung tin nhắn"></textarea>
+
+                    <div class="btnSend">
+                        <button type="">
+                            <span>gửi ngay</span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Header mobile -->
+    <header class="headerMobile">
+        <div class="container">
+            <div class="navMenu">
+                <div class="boxMobileLeft">
+                    <a href="/">
+                        <div class="boxMobileLeft">
+                            <img src="assets/04media.svg" alt="Logo">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="boxMobileRight">
+                    <input type="checkbox" id="clickCheck" class="menuToggle" hidden>
+                    <label for="clickCheck" class="menuIcon"><i class="fas fa-bars"></i></label>
+
+                    <div class="menuMobile">
+                        <ul class="navList">
+                            <li class="headerMenu mt-3">
+                                <img src="assets/04media.svg" alt="Logo">
+                                <label for="clickCheck"><i class="fas fa-times"></i></label>
+                            </li>
+                            <hr>
+                            <li><a href="/">TRANG CHỦ</a></li>
+                            <li><a href="/gioi-thieu.html">GIỚI THIỆU</a></li>
+                            <li class="service">
+                                <a href="#">DỊCH VỤ</a>
+                                <ul class="subMenu">
+                                    <li><a href="/chay-quang-cao-facebook.html">Chạy quảng cáo Facebook</a></li>
+                                    <li><a href="/ho-tro-facebook.html">Hỗ trợ Facebook</a></li>
+                                    <li><a href="/thiet-ke-landing-page.html">Thiết kế Landing page</a></li>
+                                    <li><a href="/thiet-ke-website.html">Thiết kế Website</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/tin-tuc.html" class="active">TIN TỨC</a></li>
+                            <li><a href="/lien-he.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                    <label for="clickCheck" class="overlay"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container mb-5">
+        <div class="row">
+
+            <div class="col-lg-8 mt-4">
+                <main class="mains">
+                    <h3 class="titleNewsPost">Tìm hiểu Dark Web từ cơ bản đến nâng cao</h3>
+                    <p class="des">
+                        Việc truy cập Dark Web cực kỳ dễ dàng và cũng cực kỳ dễ bị phát hiện nếu bạn không có thực hiện
+                        các biện pháp phòng bị. Nếu bạn chưa quen với Darknet, bài viết này sẽ giúp bạn đứng vững trên
+                        con đường của mình.
+                    </p>
+                    <img src="./assets/news3/anh1.png" alt="" style="width: 100%;" />
+                    <p>Dark Web, hay Darknet, là một thuật ngữ chung để chỉ một tập hợp các trang web trên mạng được mã
+                        hoá với các địa chỉ IP ẩn – tất cả điều này nhằm mang lại sự ẩn danh tuyệt đối cho người dùng...
+                    </p>
+
+                    <h5>Dark Web không giống như Deep Web</h5>
+                    <p>Deep Web là tất cả các trang web không thể truy cập được bằng các công cụ tìm kiếm thông
+                        thường...</p>
+
+                    <p>Chúng được tìm thấy và truy cập trực tiếp bằng URL hoặc địa chỉ IP...</p>
+
+                    <h5>Cách truy cập Dark Web an toàn</h5>
+                    <p>Cổng chính vào Dark Web là trình duyệt Tor...</p>
+                    <p>Mặc dù các relay là một phần không thể thiếu...</p>
+                    <p>Cách dễ nhất để duyệt web trên Deep Web là tải và cài đặt trình duyệt Tor...</p>
+                    <p>Khi bạn ở trên Dark Web, các ISP và chính phủ có thể không xem được hoạt động của bạn...</p>
+                    <p>Đó là lý do tại sao mình khuyên bạn nên truy cập Tor bằng VPN...</p>
+                    <p>Mối quan tâm chính khi sử dụng Tor thông qua VPN là bạn phải tin tưởng nhà cung cấp VPN của
+                        mình...</p>
+
+                    <h5>Cách truy cập Tor thông qua VPN</h5>
+                    <h5>Bước 1: Tìm một dịch vụ VPN tốt</h5>
+                    <p>VPN tốt có nghĩa là VPN không lưu lại hoạt động...</p>
+                    <p>Mình đề xuất cho bạn Nordvpn hoặc Express VPN...</p>
+
+                    <h5>Bước 2: Tải và cài đặt trình duyệt Tor</h5>
+                    <p>Trước khi thực hiện, hãy kiểm tra xem VPN của bạn có đang chạy hay không...</p>
+                    <img src="./assets/news3/anh2.png" alt="" style="width: 100%;" />
+                    <p>Sau khi Tor được cài đặt, hãy tìm thư mục Tor Browser...</p>
+                    <p>Một cửa sổ mới sẽ mở ra yêu cầu bạn nhấp vào nút “Connect” hoặc “Configure”...</p>
+
+                    <h5>Bước 3: Bắt đầu duyệt các trang web .onion</h5>
+                    <p>Khi bạn mở Tor trên máy tính của mình, bạn sẽ tự động được chuyển hướng đến công cụ tìm kiếm
+                        DuckDuckGo...</p>
+                    <p>Đó là bởi vì ngay cả trong Tor, DuckDuckGo cũng tìm kiếm được các trang web thông thường.</p>
+                    <p>Các công cụ tìm kiếm Dark Web (sẽ được tìm hiểu rõ hơn ở phần dưới) sẽ đưa bạn đến các trang web
+                        .onion, chẳng hạn như:
+                    <ul>
+                        <li>Welcome to Dark Web Links (http://bznjtqphs2lp4xdd.onion)</li>
+                        <li>Candle (http://gjobqjj7wyczbqie.onion)</li>
+                        <li>not Evil (http://hss3uro2hsxfogfq.onion)</li>
+                    </ul>
+                    </p>
+                    <p>Chỉ cần đảm bảo bạn luôn bật VPN trước khi mở Tor...</p>
+
+                    <h5>Dark Web không chỉ dành cho tội phạm</h5>
+                    <p>Tính năng ẩn danh do Dark Web cung cấp chắc chắn hấp dẫn...</p>
+                    <p>Nhưng cũng có những lý do chính đáng để sử dụng Dark Web...</p>
+                    <p>Các cơ quan cảnh sát và tình báo cũng sử dụng nó để theo dõi các nhóm khủng bố...</p>
+                    <p>Trong nhiều năm, Dark Web đã trở thành biểu tượng của sự tự do trên internet...</p>
+
+                    <h5>Lướt Dark Web không bất hợp pháp nhưng có thể nguy hiểm</h5>
+                    <p>Bạn không thể bị buộc tội hình sự nếu chỉ tìm kiếm trên Dark Web...</p>
+                    <p>Hơn nữa, tính ẩn danh của Dark Web cũng khiến nó trở thành rủi ro...</p>
+
+                    <h5>Trình duyệt Tor có hoàn toàn ẩn danh không?</h5>
+                    <p>Vào năm 2014, FBI với sự hỗ trợ của các nhà nghiên cứu tại Đại học Carnegie Mellon...</p>
+                    <p>Tương tự, vào tháng 10 năm 2017, công ty bảo mật We Are Segment đã xác định được một lỗ hổng
+                        trong Tor...</p>
+                    <p>Để giải quyết những vấn đề này, Tor Project gần đây đã cải thiện bảo mật...</p>
+
+                    <h5>Các vụ án hình sự liên quan đến Dark Web</h5>
+                    <p>Mặc dù mình tin rằng Dark Web nên được sử dụng để quảng bá sự tự do ngôn luận...
+                    <ol>
+                        <li><strong>Silk Road:</strong> Có lẽ hơn bất kỳ trang web nào khác...</li>
+                        <li><strong>AlphaBay:</strong> Sau khi Silk Road bị đóng cửa...</li>
+                        <li><strong>Vụ án Playpen:</strong> Mặc dù chỉ tồn tại trong bảy tháng...</li>
+                        <li><strong>Vụ án Ashley Madison:</strong> Vào năm 2015, nhóm hacker Impact Team đã xâm nhập...
+                        </li>
+                    </ol>
+                    </p>
+
+                    <h5>Các bước bảo mật khi vào Dark Web</h5>
+                    <p>KHÔNG thay đổi kích thước cửa sổ trình duyệt TOR hoặc bật full màn hình...</p>
+                    <p>Bạn PHẢI sử dụng VPN bất cứ khi nào bạn được kết nối với Mạng TOR.</p>
+                    <p>Hãy nhớ rằng TOR không nhất thiết phải ẩn danh 100%...</p>
+                    <p>Ngắt kết nối webcam của bạn hoặc chặn máy ảnh bằng băng keo đen...</p>
+                    <p>KHÔNG BAO GIỜ sử dụng tên thật, ảnh, email hoặc mật khẩu đã dùng trước đó...</p>
+                    <p>Nếu bạn đã sử dụng Tor thì hãy suy nghĩ nghiêm túc về quyền riêng tư và bảo mật của mình.</p>
+                    <p>Lưu ý cuối cùng, mình khuyến khích tất cả những người sử dụng Dark Web có trách nhiệm...</p>
+                </main>
+            </div>
+
+
+
+            <div class="col-lg-4">
+                <span class="titlePostHighlight">Dịch vụ</span>
+                <div class="line"></div>
+                <div class="boxPostNew">
+                    <div class="boxImagePostNew">
+                        <img src="./assets/servicefbads.jpg" alt="Mô tả hình ảnh" />
+                    </div>
+                    <div class="contentPostNew">
+                        <a href="./chay-quang-cao-facebook.html" class="ttNews">
+                            Quảng cáo Facebook như thế nào là hiệu quả
+                        </a>
+                        <a href="./chay-quang-cao-facebook.html" class="action">XEM NGAY</a>
+                    </div>
+                </div>
+                <div class="boxPostNew">
+                    <div class="boxImagePostNew">
+                        <img src="./assets/servicefbunlock.jpg" alt="Mô tả hình ảnh" />
+                    </div>
+                    <div class="contentPostNew">
+                        <a href="./ho-tro-facebook.html" class="ttNews">
+                            Hỗ trợ Facebook
+                        </a>
+                        <a href="./ho-tro-facebook.html" class="action">XEM NGAY</a>
+                    </div>
+                </div>
+                <div class="boxPostNew">
+                    <div class="boxImagePostNew">
+                        <img src="./assets/servicelanding.jpg" alt="Mô tả hình ảnh" />
+                    </div>
+                    <div class="contentPostNew">
+                        <a href="./thiet-ke-landing-page.html" class="ttNews">
+                            Thiết kế landing page
+                        </a>
+                        <a href="./thiet-ke-landing-page.html" class="action">XEM NGAY</a>
+                    </div>
+                </div>
+                <div class="boxPostNew">
+                    <div class="boxImagePostNew">
+                        <img src="./assets/servicewebsite.jpg" alt="Mô tả hình ảnh" />
+                    </div>
+                    <div class="contentPostNew">
+                        <a href="./thiet-ke-website.html" class="ttNews">
+                            Thiết kế website
+                        </a>
+                        <a href="./thiet-ke-website.html" class="action">XEM NGAY</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="./assets/04media-nobg.svg" alt="VNS Logo" class="img-fluid mb-3">
+                    <p>
+                        VNS cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị
+                        chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng
+                        dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
+                        Tận tâm với khách hàng luôn là trách nhiệm của chúng tôi !
+                    </p>
+                    <p><strong>Địa chỉ:</strong> 42/1 Tân thới nhất 3, Phường Tân Thới Nhất, Quận 12, TP. Hồ Chí Minh
+                    </p>
+                    <p><strong>Số điện thoại:</strong> 032714982</p>
+                    <p><strong>Email:</strong> lck.dev701@gmail.com</p>
+                    <p><strong>Thời gian hoạt động:</strong> 9h00 - 23h59</p>
+                    <p>Copyright &copy; 2025</p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxCenter">
+                        <h3>DỊCH VỤ</h3>
+                        <p>Chạy quảng cáo Facebook</p>
+                        <p>Hỗ trợ Facebook</p>
+                        <p>Thiết kế website</p>
+                        <p>Thiết kế landing page</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxSendInfo">
+                        <h3>CHÍNH SÁCH QUI ĐỊNH</h3>
+                        <p>Điều khoản sử dụng</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Thoả thuận sử dụng dịch vụ</p>
+                        <p>Hỗ trợ khách hàng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
