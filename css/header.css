@@ -187,7 +187,6 @@
         display: block;
         width: 100%;
         transition: 0.3s ease-in-out;
-        z-index: 9999999;
     }
 
     .menuMobile {
