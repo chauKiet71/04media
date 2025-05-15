@@ -190,6 +190,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: -1;
     }
 
     .boxContact button {
@@ -325,4 +326,11 @@
 }
 .active{
     color: #2174d3 !important;
+}
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide {
+    z-index: 0 !important;
+    position: relative;
 }
