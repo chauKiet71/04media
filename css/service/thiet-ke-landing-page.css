@@ -84,10 +84,6 @@
 
 /* section 4 */
 
-.section4 {
-    background-image: url("../../../assets/bg.jpg");
-    background-size: cover;
-}
 
 .section4 h1 {
     text-align: center;
@@ -130,9 +126,6 @@
     color: blue;
 }
 
-.boxLanding {
-    padding-bottom: 40px;
-}
 
 .btnLienHe {
     border: none;
