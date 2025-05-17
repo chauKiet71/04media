@@ -350,12 +350,25 @@
     }
 
     .btns {
-        padding: 5px 15px !important;
+
         /* margin: 10px; */
         border: none;
         cursor: pointer;
-        font-size: 10px !important;
+
         transition: all 0.3s ease;
+    }
+
+    .btn-pulse {
+        background: linear-gradient(45deg, #eff0f1, #008cff);
+        color: white;
+        animation: pulse 1.5s infinite;
+        padding: 5px 15px !important;
+        font-size: 10px !important;
+        border: none;
+        border-radius: 10px !important;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0 !important;
     }
 }
 
@@ -373,9 +386,15 @@
 
 /* 1. Pulse Animation */
 .btn-pulse {
-    background-color: #3498db;
+    background: linear-gradient(45deg, #eff0f1, #008cff);
     color: white;
     animation: pulse 1.5s infinite;
+    padding: 10px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 @keyframes pulse {
@@ -391,3 +410,5 @@
         transform: scale(1);
     }
 }
+
+
