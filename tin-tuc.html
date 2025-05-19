@@ -129,7 +129,7 @@
                     <div class="menuMobile">
                         <ul class="navList">
                             <li class="headerMenu mt-3">
-                                <img src="assets/04media.svg" alt="Logo">
+                                <img src="assets/04media-nobg.svg" alt="Logo">
                                 <label for="clickCheck"><i class="fas fa-times"></i></label>
                             </li>
                             <hr>
@@ -172,7 +172,7 @@
                 <div class="line"></div>
                 <div class="boxPostNew">
                     <div class="boxImagePostNew">
-                        <img src="./assets/servicefbads.jpg" alt="Mô tả hình ảnh" />
+                        <img src="./assets/servicefbads.webp" alt="Mô tả hình ảnh" />
                     </div>
                     <div class="contentPostNew">
                         <a href="./chay-quang-cao-facebook" class="ttNews">
@@ -183,7 +183,7 @@
                 </div>
                 <div class="boxPostNew">
                     <div class="boxImagePostNew">
-                        <img src="./assets/servicefbunlock.jpg" alt="Mô tả hình ảnh" />
+                        <img src="./assets/servicefbunlock.webp" alt="Mô tả hình ảnh" />
                     </div>
                     <div class="contentPostNew">
                         <a href="./ho-tro-facebook" class="ttNews">
@@ -194,7 +194,7 @@
                 </div>
                 <div class="boxPostNew">
                     <div class="boxImagePostNew">
-                        <img src="./assets/servicelanding.jpg" alt="Mô tả hình ảnh" />
+                        <img src="./assets/servicelanding.webp" alt="Mô tả hình ảnh" />
                     </div>
                     <div class="contentPostNew">
                         <a href="./thiet-ke-landing-page" class="ttNews">
@@ -205,7 +205,7 @@
                 </div>
                 <div class="boxPostNew">
                     <div class="boxImagePostNew">
-                        <img src="./assets/servicewebsite.jpg" alt="Mô tả hình ảnh" />
+                        <img src="./assets/servicewebsite.webp" alt="Mô tả hình ảnh" />
                     </div>
                     <div class="contentPostNew">
                         <a href="./thiet-ke-website" class="ttNews">
@@ -228,14 +228,7 @@
 
 
 
-
-
-
-
-
-
-
-
+    
     <footer>
         <div class="container">
             <div class="row">
@@ -407,20 +400,21 @@
 
     listNews.forEach(news => {
         const newsHTML = `
-        <div class="row boxNews mb-4">
-            <div class="col-lg-4 mt-3">
-                <div class="boxImage">
-                    <img src="${news.image}" alt="${news.title}" />
+        <a href="${news.link}">
+            <div class="row boxNews mb-4">
+                <div class="col-lg-4 mt-3">
+                    <div class="boxImage">
+                        <img src="${news.image}" alt="${news.title}" />
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-3">
+                    <div class="boxContent">
+                        <h4>${news.title}</h4>
+                        <p>${news.description.slice(0, 150)}...</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-8 mt-3">
-                <div class="boxContent">
-                    <h4>${news.title}</h4>
-                    <p>${news.description.slice(0, 150)}...</p>
-                    <a href="${news.link}">Xem thêm</a>
-                </div>
-            </div>
-        </div>
+        </a>
     `;
         container.innerHTML += newsHTML;
     });
@@ -440,6 +434,7 @@
 
         pageItems.forEach(news => {
             const newsHTML = `
+        <a href="${news.link}" class="new-public">
             <div class="row boxNews mb-4">
                 <div class="col-lg-4 mt-3">
                     <div class="boxImage">
@@ -450,10 +445,10 @@
                     <div class="boxContent">
                         <h4>${news.title}</h4>
                         <p>${news.description.slice(0, 150)}...</p>
-                        <a href="${news.link}">Xem thêm</a>
                     </div>
                 </div>
             </div>
+        </a> 
         `;
             containers.innerHTML += newsHTML;
         });

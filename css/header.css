@@ -198,8 +198,12 @@
         background-color: #f3f3f3;
         transform: translateX(-100%);
         transition: 0.3s ease-in-out;
-        z-index: 99999999;
+        z-index: 999999999999;
+        /* Giữ cao, nhưng không cần quá lố */
     }
+
+
+
 
     .menuIcon {
         z-index: 9999 !important;
@@ -252,7 +256,8 @@
         position: fixed;
         inset: 0;
         background: rgba(0, 0, 0, 0.5);
-        z-index: 9;
+        z-index: 999998;
+        /* Đặt thấp hơn menu nhưng cao hơn slick */
         height: 100vh;
     }
 
@@ -269,6 +274,10 @@
 
     .contactForm {
         padding: 20px 20px !important;
+    }
+
+    .feedback-slider {
+        z-index: 1 !important;
     }
 }
 

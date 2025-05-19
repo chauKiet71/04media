@@ -174,3 +174,8 @@
     cursor: default;
     border-color: #ddd;
 }
+
+.new-public {
+    text-decoration: none;
+    color: #333;
+}
