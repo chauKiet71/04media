@@ -51,6 +51,10 @@
         {
             "source": "/top-5-shop-ban-do-gia-dung-cho-mua-he-tren-shopee-gia-re-uy-tin-chat-luong",
             "destination": "/top-5-shop-ban-do-gia-dung-cho-mua-he-tren-shopee-gia-re-uy-tin-chat-luong.html"
+        },
+        {
+            "source": "/ngan-98-den-co-quan-chuc-nang-lam-viec-vu-san-pham-giam-can-nghi-kem-chat-luong",
+            "destination": "/ngan-98-den-co-quan-chuc-nang-lam-viec-vu-san-pham-giam-can-nghi-kem-chat-luong.html"
         }
     ]
 }
