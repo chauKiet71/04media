@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/04adsicon.ico" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/tin-tuc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Author -->
+    <meta name="author" content="04Ads - Quảng cáo & đối tác chính thức Facebook">
+    <meta name="keywords"
+        content="Chặn ứng dụng Telegram,cục viễn thông,Cục An ninh mạng và phòng,chống tội phạm sử dụng công nghệ cao,vi phạm pháp luật trên Telegram">
+    <meta property="og:title" content="Chặn ứng dụng Telegram tại Việt Nam do vi phạm trên không gian mạng">
+    <meta name="news_keywords" content="Chặn ứng dụng Telegram,cục viễn thông,Cục An ninh mạng và phòng,chống tội phạm sử dụng công nghệ cao,vi phạm pháp luật trên Telegram">
+    <meta name="description"
+        content="Trước tình trạng ứng dụng Telegram ngày càng bị lạm dụng cho các hoạt động vi phạm pháp luật, Cục Viễn thông yêu cầu các doanh nghiệp dịch vụ">
+    <meta property="og:description"
+        content="Trước tình trạng ứng dụng Telegram ngày càng bị lạm dụng cho các hoạt động vi phạm pháp luật, Cục Viễn thông yêu cầu các doanh nghiệp dịch vụ">
+
+    <meta property="og:image" content="../assets/000003/chan-ung-dung-telegram-tai-viet-nam-do-vi-pham-tren-khong-gian-mang.jpg">
+    <meta property="og:image:width" content="1490">
+    <meta property="og:image:height" content="794">
+    <meta property="og:image:type" content="image/png">
+    <title>Chặn ứng dụng Telegram tại Việt Nam do vi phạm trên không gian mạng</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('sticky');
+                else header.classList.remove('sticky');
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const headerMobile = document.querySelector('.headerMobile'); // hoặc '#headerMobile' nếu là ID
+
+            if (headerMobile) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        headerMobile.classList.add('sticky');
+                    } else {
+                        headerMobile.classList.remove('sticky');
+                    }
+                });
+            } else {
+                console.warn('Không tìm thấy phần tử headerMobile');
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Header desktop -->
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <a href="/">
+                    <img src="../assets/04ads.svg" alt="04Ads - Quảng cáo & đối tác chính thức Facebook">
+                </a>
+                <div class="boxRight">
+                    <ul>
+                        <li class="active"><a href="/">TRANG CHỦ</a></li>
+                        <li><a href="../gioi-thieu">GIỚI THIỆU</a></li>
+                        <li class="service">
+                            <a href="#">DỊCH VỤ</a>
+                            <ul class="subMenu">
+                                <li><a href="../chay-quang-cao-facebook">Chạy quảng cáo Facebook</a></li>
+                                <li><a href="../ho-tro-facebook">Hỗ trợ Facebook</a></li>
+                                <li><a href="../thiet-ke-landing-page">Thiết kế Landing page</a></li>
+                                <li><a href="../thiet-ke-website">Thiết kế Website</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../tin-tuc" class="active">TIN TỨC</a></li>
+                        <li><a href="../lien-he">LIÊN HỆ</a></li>
+                    </ul>
+                    <span class="btns" data-bs-toggle="modal" data-bs-target="#exampleModal">ĐĂNG KÝ TƯ VẤN</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <form action="https://formspree.io/f/xyzwdeya" method="POST" class="contactForm">
+                    <h1>NHẬN TƯ VẤN TẠI ĐÂY</h1>
+                    <input type="text" name="fullName" placeholder="Họ tên" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="text" name="phone" placeholder="Số điện thoại" />
+
+                    <select name="service">
+                        <option value="choose" selected>Chọn dịch vụ</option>
+                        <option value="ads">Quảng cáo Facebook</option>
+                        <option value="dvfb">Hỗ trợ Facebook</option>
+                        <option value="website">Thiết kế website</option>
+                        <option value="landing">Thiết kế landing page</option>
+
+                    </select>
+
+                    <textarea name="message" placeholder="Nội dung tin nhắn"></textarea>
+
+                    <div class="btnSend">
+                        <button type="">
+                            <span>gửi ngay</span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Header mobile -->
+    <header class="headerMobile">
+        <div class="container">
+            <div class="navMenu">
+                <div class="boxMobileLeft">
+                    <a href="/">
+                        <div class="boxMobileLeft">
+                            <img src="../assets/04ads.svg" alt="04Ads - Quảng cáo & đối tác chính thức Facebook">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="boxMobileRight">
+                    <input type="checkbox" id="clickCheck" class="menuToggle" hidden>
+                    <label for="clickCheck" class="menuIcon"><i class="fas fa-bars"></i></label>
+
+                    <div class="menuMobile">
+                        <ul class="navList">
+                            <li class="headerMenu mt-3">
+                                <img src="../assets/04ads.svg" alt="04Ads - Quảng cáo & đối tác chính thức Facebook">
+                                <label for="clickCheck"><i class="fas fa-times"></i></label>
+                            </li>
+                            <hr>
+                            <li><a href="/">TRANG CHỦ</a></li>
+                            <li><a href="../gioi-thieu">GIỚI THIỆU</a></li>
+                            <li class="service">
+                                <a href="#">DỊCH VỤ</a>
+                                <ul class="subMenu">
+                                    <li><a href="../chay-quang-cao-facebook">Chạy quảng cáo Facebook</a></li>
+                                    <li><a href="../ho-tro-facebook">Hỗ trợ Facebook</a></li>
+                                    <li><a href="../thiet-ke-landing-page">Thiết kế Landing page</a></li>
+                                    <li><a href="../thiet-ke-website">Thiết kế Website</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../tin-tuc" class="active">TIN TỨC</a></li>
+                            <li><a href="../lien-he">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                    <label for="clickCheck" class="overlay"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <div class="lines"></div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <main class="mains">
+                    <h1 class="titleNewsPost">Chặn ứng dụng Telegram tại Việt Nam do vi phạm trên không gian mạng</h1>
+                    <li class="mb-3 mt-3 date-post"><i class="fa-solid fa-calendar"></i> Thứ sáu, 23/05/2025 - 13:39</li> 
+                    <p>
+                       Trước tình trạng ứng dụng Telegram ngày càng bị lạm dụng cho các hoạt động vi phạm pháp luật, Cục Viễn thông yêu cầu các doanh nghiệp dịch vụ viễn thông ngăn chặn hoạt động của nền tảng này.
+                    </p>
+                   
+                    <img src="../assets/000003/chan-ung-dung-telegram-tai-viet-nam-do-vi-pham-tren-khong-gian-mang.jpg" style="width: 100%;" alt="Quản lý nhà hàng ở TPHCM tổ chức cho nam nhân viên đi 'sex tour'">
+                    <p class="mt-3 text-center"><i>Telegram đang là thiên đường ẩn náu của tội phạm mạng tại Việt Nam (Ảnh: ST).</i></p>
+                    <p>Động thái quyết liệt này được đưa ra sau đề nghị từ Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao (A05) thuộc Bộ Công an, cho thấy quyết tâm của Chính phủ trong việc làm trong sạch không gian mạng và bảo vệ an ninh quốc gia.</p>
+                    <p>Theo công văn số 2312/CVT-CS ngày 2/5, Cục Viễn thông đã chỉ rõ những căn cứ pháp lý và thực tiễn cấp bách đòi hỏi phải có hành động ngay lập tức đối với Telegram.</p>
+                    <p>Công văn này được ban hành dựa trên cơ sở văn bản số 2898/A05-P5 ngày 24/4 của Cục A05, trong đó nêu chi tiết về tình hình vi phạm pháp luật nghiêm trọng liên quan đến ứng dụng Telegram tại Việt Nam.</p>
+                    <p>Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao đã gióng lên hồi chuông báo động về việc Telegram đang trở thành một công cụ đắc lực cho nhiều loại hình tội phạm. Với các tính năng như mã hóa đầu cuối mạnh mẽ, khả năng ẩn danh cao, dễ dàng tạo lập và quản lý các hội nhóm với số lượng thành viên khổng lồ, Telegram vô hình trung đã tạo điều kiện cho các đối tượng xấu hoạt động.</p>
+                    <p>Theo Cục A05, hiện có tới 68% kênh, nhóm xấu độc trong tổng số 9.600 kênh, nhóm Telegram tại Việt Nam. Nhiều hội, nhóm với hàng chục nghìn đối tượng tham gia, do các đối tượng chống đối, phản động tạo lập, tán phát tài liệu chống phá. Xảy ra nhiều vụ việc liên quan đến lừa đảo, rao bán dữ liệu người dùng, ma túy, có trường hợp nghi vấn liên quan đến khủng bố...</p>
+                    <p>Cục Viễn thông nhấn mạnh, việc Telegram cung cấp thông tin xuyên biên giới cho người dùng tại Việt Nam phải tuân thủ các quy định của pháp luật Việt Nam.</p>
+                    <p>Nghị định 147/2024/NĐ-CP về quản lý, cung cấp, sử dụng dịch vụ Internet và thông tin trên mạng đã quy định rõ trách nhiệm của các tổ chức, doanh nghiệp nước ngoài trong việc hợp tác với cơ quan chức năng Việt Nam để xử lý thông tin vi phạm. </p>
+                    <p>Trường hợp không hợp tác, cơ quan có thẩm quyền của Việt Nam có quyền triển khai các biện pháp kỹ thuật để ngăn chặn.</p>
+                    <p>Thêm vào đó, Luật Viễn thông cũng nghiêm cấm hành vi lợi dụng hoạt động viễn thông để chống phá, xâm phạm an ninh quốc gia, trật tự xã hội (khoản 1 Điều 9). Khi đó, các doanh nghiệp viễn thông có nghĩa vụ thực hiện biện pháp ngăn chặn dịch vụ (điểm đ khoản 2 Điều 13).</p>
+                    <p>Cục Viễn thông chỉ ra rằng, kể từ ngày 1/1, các doanh nghiệp cung cấp dịch vụ viễn thông xuyên biên giới trên Internet phải thực hiện thủ tục thông báo cung cấp dịch vụ. </p>
+                    <p>Tuy nhiên, Telegram đã không chấp hành quy định này. Việc cung cấp dịch vụ viễn thông khi chưa được phép là hành vi bị nghiêm cấm theo khoản 4 Điều 9 Luật Viễn thông.</p>
+                    <p>Khi đó, theo điểm c Khoản 1 Điều 79 Nghị định 163/2024/NĐ-CP, doanh nghiệp viễn thông có trách nhiệm triển khai các giải pháp, biện pháp để ngăn chặn.</p>
+                    <p>Trước tình hình trên, Cục Viễn thông đã chuyển văn bản của Cục A05 kèm theo thông tin về các vi phạm của Telegram tới các doanh nghiệp viễn thông.</p>
+                    <p>Đồng thời, Cục đề nghị các doanh nghiệp này nghiêm túc thực hiện nghĩa vụ được quy định, triển khai các giải pháp, biện pháp kỹ thuật cần thiết để ngăn chặn hoạt động của Telegram tại Việt Nam theo yêu cầu của cơ quan công an.</p>
+                    <p>Các doanh nghiệp viễn thông được yêu cầu báo cáo giải pháp và kết quả thực hiện về Cục Viễn thông trước ngày 2/6.</p>
+                    <p>Động thái này thể hiện sự phối hợp chặt chẽ giữa các cơ quan quản lý nhà nước trong nỗ lực đảm bảo an ninh mạng, bảo vệ người dân khỏi các tác động tiêu cực và hoạt động phạm pháp trên không gian mạng.</p>
+                    <p>Việc yêu cầu chặn Telegram, nếu được thực thi triệt để, được kỳ vọng sẽ góp phần hạn chế đáng kể các hoạt động phi pháp, tạo môi trường Internet lành mạnh hơn tại Việt Nam.</p>
+                    <p><i>Nguồn: <a href="https://dantri.com.vn/cong-nghe/chan-ung-dung-telegram-tai-viet-nam-do-vi-pham-tren-khong-gian-mang-20250523132114927.htm">Báo Dân trí</a></i></p>
+                </main>
+            </div>
+
+
+
+            <div class="col-lg-4 mt-4" style="position: relative;">
+                <div class="fixed">
+                    <span class="titlePostHighlight">Dịch vụ</span>
+                    <div class="line"></div>
+                    <div class="boxPostNew">
+                        <div class="boxImagePostNew">
+                            <img src="../assets/servicefbads.webp" alt="04Ads - Quảng cáo Facebook" />
+                        </div>
+                        <div class="contentPostNew">
+                            <a href="../chay-quang-cao-facebook" class="ttNews">
+                                Quảng cáo Facebook 
+                            </a>
+                            <a href="../chay-quang-cao-facebook" class="action">XEM NGAY</a>
+                        </div>
+                    </div>
+                    <div class="boxPostNew">
+                        <div class="boxImagePostNew">
+                            <img src="../assets/servicefbunlock.webp" alt="04Ads - Hỗ trợ dịch vụ Facebook" />
+                        </div>
+                        <div class="contentPostNew">
+                            <a href="../ho-tro-facebook" class="ttNews">
+                                Hỗ trợ Facebook
+                            </a>
+                            <a href="../ho-tro-facebook" class="action">XEM NGAY</a>
+                        </div>
+                    </div>
+                    <div class="boxPostNew">
+                        <div class="boxImagePostNew">
+                            <img src="../assets/servicelanding.webp" alt="04Ads - Thiết kế landing page" />
+                        </div>
+                        <div class="contentPostNew">
+                            <a href="../thiet-ke-landing-page" class="ttNews">
+                                Thiết kế landing page
+                            </a>
+                            <a href="../thiet-ke-landing-page" class="action">XEM NGAY</a>
+                        </div>
+                    </div>
+                    <div class="boxPostNew">
+                        <div class="boxImagePostNew">
+                            <img src="../assets/servicewebsite.webp" alt="04Ads - Thiết kế website" />
+                        </div>
+                        <div class="contentPostNew">
+                            <a href=".../thiet-ke-website" class="ttNews">
+                                Thiết kế website
+                            </a>
+                            <a href="../thiet-ke-website" class="action">XEM NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <img src="../assets/04ads.svg" alt="04Ads - Quảng cáo & đối tác chính thức Facebook" class="img-fluid mb-3">
+                    <p>
+                        04Ads cung cấp dịch vụ Thiết kế website trọn gói với giao diện đẹp, độc đáo, sáng tạo là Đơn vị
+                        chuyên tư vấn và triển khai hoạt động Marketing số với nền tảng Google , Facebook mang tính ứng
+                        dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
+                        Tận tâm với khách hàng luôn là trách nhiệm của chúng tôi !
+                    </p>
+                    <p><strong>Địa chỉ:</strong> 42/1 Tân thới nhất 3, Phường Tân Thới Nhất, Quận 12, TP. Hồ Chí Minh
+                    </p>
+                    <p><strong>Số điện thoại:</strong> 032714982</p>
+                    <p><strong>Email:</strong> lck.dev701@gmail.com</p>
+                    <p><strong>Thời gian hoạt động:</strong> 9h00 - 23h59</p>
+                    <p>Copyright &copy; 2025</p>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxCenter">
+                        <h3>DỊCH VỤ</h3>
+                        <p>Chạy quảng cáo Facebook</p>
+                        <p>Hỗ trợ Facebook</p>
+                        <p>Thiết kế website</p>
+                        <p>Thiết kế landing page</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="boxSendInfo">
+                        <h3>CHÍNH SÁCH QUI ĐỊNH</h3>
+                        <p>Điều khoản sử dụng</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Thoả thuận sử dụng dịch vụ</p>
+                        <p>Hỗ trợ khách hàng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+

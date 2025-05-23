@@ -6,11 +6,11 @@
         },
         {
             "source": "/cac-cach-tan-cong-cua-hacker-dung-de-chiem-quyen-tai-khoan-cua-ban",
-            "destination": "/cac-cach-tan-cong-cua-hacker-dung-de-chiem-quyen-tai-khoan-cua-ban.html"
+            "destination": "/tin-tuc/cac-cach-tan-cong-cua-hacker-dung-de-chiem-quyen-tai-khoan-cua-ban.html"
         },
         {
             "source": "/cach-nuoi-acc-facebook-ads-de-chay-quang-cao",
-            "destination": "/cach-nuoi-acc-facebook-ads-de-chay-quang-cao.html"
+            "destination": "/tin-tuc/cach-nuoi-acc-facebook-ads-de-chay-quang-cao.html"
         },
         {
             "source": "/gioi-thieu",
@@ -22,7 +22,7 @@
         },
         {
             "source": "/huong-dan-tu-lap-trinh-bang-blackbox-ai",
-            "destination": "/huong-dan-tu-lap-trinh-bang-blackbox-ai.html"
+            "destination": "/tin-tuc/huong-dan-tu-lap-trinh-bang-blackbox-ai.html"
         },
         {
             "source": "/lien-he",
@@ -38,7 +38,7 @@
         },
         {
             "source": "/tim-hieu-dark-web-tu-co-ban-den-nang-cao",
-            "destination": "/tim-hieu-dark-web-tu-co-ban-den-nang-cao.html"
+            "destination": "/tin-tuc/tim-hieu-dark-web-tu-co-ban-den-nang-cao.html"
         },
         {
             "source": "/tin-tuc",
@@ -46,19 +46,23 @@
         },
         {
             "source": "/top-3-tool-copy-chien-dich-quang-cao-facebook-cua-doi-thu-tot-nhat",
-            "destination": "/top-3-tool-copy-chien-dich-quang-cao-facebook-cua-doi-thu-tot-nhat.html"
+            "destination": "/tin-tuc/top-3-tool-copy-chien-dich-quang-cao-facebook-cua-doi-thu-tot-nhat.html"
         },
         {
             "source": "/top-5-shop-ban-do-gia-dung-cho-mua-he-tren-shopee-gia-re-uy-tin-chat-luong",
-            "destination": "/top-5-shop-ban-do-gia-dung-cho-mua-he-tren-shopee-gia-re-uy-tin-chat-luong.html"
+            "destination": "/tin-tuc/top-5-shop-ban-do-gia-dung-cho-mua-he-tren-shopee-gia-re-uy-tin-chat-luong.html"
         },
         {
             "source": "/ngan-98-den-co-quan-chuc-nang-lam-viec-vu-san-pham-giam-can-nghi-kem-chat-luong",
-            "destination": "/ngan-98-den-co-quan-chuc-nang-lam-viec-vu-san-pham-giam-can-nghi-kem-chat-luong.html"
+            "destination": "/tin-tuc/ngan-98-den-co-quan-chuc-nang-lam-viec-vu-san-pham-giam-can-nghi-kem-chat-luong.html"
         },
         {
             "source": "/quan-ly-nha-hang-o-tphcm-to-chuc-cho-nam-nhan-vien-di-sex-tour",
-            "destination": "/quan-ly-nha-hang-o-tphcm-to-chuc-cho-nam-nhan-vien-di-sex-tour.html"
+            "destination": "/tin-tuc/quan-ly-nha-hang-o-tphcm-to-chuc-cho-nam-nhan-vien-di-sex-tour.html"
+        }
+        {
+            "source": "/chan-ung-dung-telegram-tai-viet-nam-do-vi-pham-tren-khong-gian-mang",
+            "destination": "/tin-tuc/chan-ung-dung-telegram-tai-viet-nam-do-vi-pham-tren-khong-gian-mang.html"
         }
     ]
 }
