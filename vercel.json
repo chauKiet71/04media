@@ -1,32 +1,16 @@
 {
     "rewrites": [
         {
-            "source": "/chay-quang-cao-facebook",
-            "destination": "/chay-quang-cao-facebook.html"
-        },
-        {
-            "source": "/cac-cach-tan-cong-cua-hacker-dung-de-chiem-quyen-tai-khoan-cua-ban",
-            "destination": "/tin-tuc/cac-cach-tan-cong-cua-hacker-dung-de-chiem-quyen-tai-khoan-cua-ban.html"
-        },
-        {
-            "source": "/cach-nuoi-acc-facebook-ads-de-chay-quang-cao",
-            "destination": "/tin-tuc/cach-nuoi-acc-facebook-ads-de-chay-quang-cao.html"
-        },
-        {
             "source": "/gioi-thieu",
             "destination": "/gioi-thieu.html"
         },
         {
+            "source": "/chay-quang-cao-facebook",
+            "destination": "/chay-quang-cao-facebook.html"
+        },
+        {
             "source": "/ho-tro-facebook",
             "destination": "/ho-tro-facebook.html"
-        },
-        {
-            "source": "/huong-dan-tu-lap-trinh-bang-blackbox-ai",
-            "destination": "/tin-tuc/huong-dan-tu-lap-trinh-bang-blackbox-ai.html"
-        },
-        {
-            "source": "/lien-he",
-            "destination": "/lien-he.html"
         },
         {
             "source": "/thiet-ke-landing-page",
@@ -37,12 +21,28 @@
             "destination": "/thiet-ke-website.html"
         },
         {
-            "source": "/tim-hieu-dark-web-tu-co-ban-den-nang-cao",
-            "destination": "/tin-tuc/tim-hieu-dark-web-tu-co-ban-den-nang-cao.html"
-        },
-        {
             "source": "/tin-tuc",
             "destination": "/tin-tuc.html"
+        },
+        {
+            "source": "/lien-he",
+            "destination": "/lien-he.html"
+        },
+        {
+            "source": "/cac-cach-tan-cong-cua-hacker-dung-de-chiem-quyen-tai-khoan-cua-ban",
+            "destination": "/tin-tuc/cac-cach-tan-cong-cua-hacker-dung-de-chiem-quyen-tai-khoan-cua-ban.html"
+        },
+        {
+            "source": "/cach-nuoi-acc-facebook-ads-de-chay-quang-cao",
+            "destination": "/tin-tuc/cach-nuoi-acc-facebook-ads-de-chay-quang-cao.html"
+        },
+        {
+            "source": "/huong-dan-tu-lap-trinh-bang-blackbox-ai",
+            "destination": "/tin-tuc/huong-dan-tu-lap-trinh-bang-blackbox-ai.html"
+        },
+        {
+            "source": "/tim-hieu-dark-web-tu-co-ban-den-nang-cao",
+            "destination": "/tin-tuc/tim-hieu-dark-web-tu-co-ban-den-nang-cao.html"
         },
         {
             "source": "/top-3-tool-copy-chien-dich-quang-cao-facebook-cua-doi-thu-tot-nhat",
