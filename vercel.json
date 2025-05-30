@@ -63,6 +63,10 @@
         {
             "source": "/chan-ung-dung-telegram-tai-viet-nam-do-vi-pham-tren-khong-gian-mang",
             "destination": "/tin-tuc/chan-ung-dung-telegram-tai-viet-nam-do-vi-pham-tren-khong-gian-mang.html"
-        }
+        },
+        {
+            "source": "/canh-bao-voi-chieu-tro-lua-dao-hack-facebook-moi-cuc-ky-tinh-vi",
+            "destination": "/tin-tuc/canh-bao-voi-chieu-tro-lua-dao-hack-facebook-moi-cuc-ky-tinh-vi.html"
+        },
     ]
 }
